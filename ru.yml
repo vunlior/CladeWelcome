@@ -1,0 +1,22 @@
+cladewelcome.default:
+  - "§aДобро пожаловать, %player%!"
+  - "§eРады видеть тебя, %player%!"
+  - "§bИгрок %player% вошёл на сервер!"
+  - "§dПриветствуем, %player%!"
+
+cladewelcome.admin:
+  - "§cАдминистратор %player% вошёл на сервер!"
+  - "§4АДМИН %player% подключился!"
+  - "§cВнимание! Админ %player% вошёл!"
+  - "§4Администратор %player% в сети!"
+
+cladewelcome.op:
+  - "§dOP игрок %player% вошёл!"
+  - "§5Оператор %player% подключился!"
+  - "§dСистемный игрок %player% в игре!"
+
+reload-success: "§aПлагин перезагружен!"
+no-permission: "§cУ тебя нет прав!"
+usage: "§eИспользование: /cw reload | /cw lang <ru|en|uz>"
+lang-changed: "§aЯзык изменён на: %lang%"
+invalid-lang: "§cДоступные языки: ru, en, uz"

@@ -1,0 +1,13 @@
+name: CladeWelcome
+version: 0.1.0.0.a
+main: org.vunlior.Main
+api-version: 1.21
+
+commands:
+    cw:
+      description: CladeWelcome main command
+      usage: /cw reload
+
+      permissions:
+        cladewelcome.reload:
+          default: op

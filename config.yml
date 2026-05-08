@@ -1,0 +1,17 @@
+# =========================================
+# CladeWelcome Configuration
+# Version: 0.1.0.0.a
+# Author: Vunlior
+# =========================================
+
+language: en
+
+messages:
+  default:
+    - "cladewelcome.default"
+
+  admin:
+    - "cladewelcome.admin"
+
+  op:
+    - "cladewelcome.op"

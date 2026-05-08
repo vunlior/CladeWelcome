@@ -1,0 +1,22 @@
+cladewelcome.default:
+  - "§aXush kelibsiz, %player%!"
+  - "§eSizni ko‘rib xursandmiz, %player%!"
+  - "§b%player% serverga qo‘shildi!"
+  - "§dXush kelibsiz, %player%!"
+
+cladewelcome.admin:
+  - "§cAdministrator %player% serverga kirdi!"
+  - "§4ADMIN %player% ulanmoqda!"
+  - "§cDiqqat! Admin %player% serverga kirdi!"
+  - "§4Administrator %player% online!"
+
+cladewelcome.op:
+  - "§dOP o‘yinchi %player% kirdi!"
+  - "§5Operator %player% ulanmoqda!"
+  - "§dTizim o‘yinchisi %player% o‘yinda!"
+
+reload-success: "§aPlugin qayta yuklandi!"
+no-permission: "§cSizda ruxsat yo‘q!"
+usage: "§eIshlatish: /cw reload | /cw lang <ru|en|uz>"
+lang-changed: "§aTil o‘zgartirildi: %lang%"
+invalid-lang: "§cMavjud tillar: ru, en, uz"
