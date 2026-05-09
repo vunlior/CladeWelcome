@@ -1,13 +1,32 @@
 name: CladeWelcome
-version: 0.1.0.0.a
+version: 0.2.0.0.a
 main: org.vunlior.Main
 api-version: 1.21
+author: Vunlior
 
 commands:
-    cw:
-      description: CladeWelcome main command
-      usage: /cw reload
+  cw:
+    description: Main CladeWelcome command
+    usage: /cw help
+    aliases: [cladewelcome, cwl]
 
-      permissions:
-        cladewelcome.reload:
-          default: op
+permissions:
+  cladewelcome.reload:
+    description: Allows reloading the plugin
+    default: op
+
+  cladewelcome.lang:
+    description: Allows changing plugin language
+    default: op
+
+  cladewelcome.admin:
+    description: Enables admin join messages
+    default: op
+
+  cladewelcome.op:
+    description: Enables OP join messages
+    default: op
+
+  cladewelcome.default:
+    description: Default join messages group
+    default: true
