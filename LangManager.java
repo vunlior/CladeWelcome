@@ -18,61 +18,47 @@ public class LangManager {
 
     public void load(JavaPlugin plugin, String langName) {
 
-        // CREATE LANG FOLDER
-        File langFolder = new File(
-                plugin.getDataFolder(),
-                "lang"
-        );
+        // LANG FOLDER
+        File langFolder = new File(plugin.getDataFolder(), "lang");
 
         if (!langFolder.exists()) {
             langFolder.mkdirs();
         }
 
-        // SAVE ALL LANG FILES
+        // DEFAULT LANGS (save only if missing)
         saveLang(plugin, "en");
         saveLang(plugin, "ru");
         saveLang(plugin, "uz");
+        saveLang(plugin, "de");
+        saveLang(plugin, "es");
+        saveLang(plugin, "tr");
 
         if (langName == null || langName.isEmpty()) {
             langName = fallbackLang;
         }
 
-        File file = new File(
-                plugin.getDataFolder(),
-                "lang/" + langName + ".yml"
-        );
+        File file = new File(plugin.getDataFolder(), "lang/" + langName + ".yml");
 
-        // FALLBACK TO ENGLISH
+        // FALLBACK SYSTEM
         if (!file.exists()) {
 
             plugin.getLogger().warning(
-                    "Lang file not found: "
-                            + langName
-                            + ".yml, using fallback EN"
+                    "Lang not found: " + langName + ".yml → using EN fallback"
             );
 
-            file = new File(
-                    plugin.getDataFolder(),
-                    "lang/" + fallbackLang + ".yml"
-            );
+            file = new File(plugin.getDataFolder(), "lang/" + fallbackLang + ".yml");
         }
 
         lang = YamlConfiguration.loadConfiguration(file);
     }
 
-    // SAVE LANG FILE
+    // SAVE LANGUAGE FILE (safe)
     private void saveLang(JavaPlugin plugin, String lang) {
 
-        File file = new File(
-                plugin.getDataFolder(),
-                "lang/" + lang + ".yml"
-        );
+        File file = new File(plugin.getDataFolder(), "lang/" + lang + ".yml");
 
         if (!file.exists()) {
-            plugin.saveResource(
-                    "lang/" + lang + ".yml",
-                    false
-            );
+            plugin.saveResource("lang/" + lang + ".yml", false);
         }
     }
 
@@ -86,29 +72,18 @@ public class LangManager {
 
         if (list != null && !list.isEmpty()) {
 
-            String value =
-                    list.get(random.nextInt(list.size()));
+            String value = list.get(random.nextInt(list.size()));
 
-            return ChatColor.translateAlternateColorCodes(
-                    '&',
-                    value
-            );
+            return ChatColor.translateAlternateColorCodes('&', value);
         }
 
-        // SINGLE STRING
+        // SINGLE VALUE
         String value = lang.getString(key);
 
         if (value == null) {
-
-            return ChatColor.translateAlternateColorCodes(
-                    '&',
-                    key
-            );
+            return ChatColor.translateAlternateColorCodes('&', key);
         }
 
-        return ChatColor.translateAlternateColorCodes(
-                '&',
-                value
-        );
+        return ChatColor.translateAlternateColorCodes('&', value);
     }
 }
