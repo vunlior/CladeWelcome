@@ -7,7 +7,7 @@
 
     <groupId>org.vunlior</groupId>
     <artifactId>CladeWelcome</artifactId>
-    <version>0.1.0.0.a</version>
+    <version>0.2.0.0.a</version>
     <packaging>jar</packaging>
 
     <name>CladeWelcome</name>
@@ -45,7 +45,7 @@
     </dependencies>
 
     <build>
-        <finalName>CladeWelcome_v0.1.0.0.a</finalName>
+        <finalName>CladeWelcome_v0.2.0.0.a</finalName>
 
         <plugins>
             <plugin>
