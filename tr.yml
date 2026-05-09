@@ -1,0 +1,22 @@
+cladewelcome.default:
+  - "§aHoş geldin, %player%!"
+  - "§eSeni görmek güzel, %player%!"
+  - "§b%player% sunucuya katıldı!"
+  - "§dSelam %player%!"
+
+cladewelcome.admin:
+  - "§cYönetici %player% sunucuya katıldı!"
+  - "§4ADMIN %player% bağlandı!"
+  - "§cDikkat! Admin %player% katıldı!"
+  - "§4Yönetici %player% çevrimiçi!"
+
+cladewelcome.op:
+  - "§dOP oyuncu %player% sunucuya katıldı!"
+  - "§5Operatör %player% bağlandı!"
+  - "§dSistem oyuncusu %player% oyunda!"
+
+reload-success: "§aPlugin başarıyla yeniden yüklendi!"
+no-permission: "§cYetkin yok!"
+usage: "§eKullanım: /cw reload | /cw lang <ru|en|uz>"
+lang-changed: "§aDil değiştirildi: %lang%"
+invalid-lang: "§cMevcut diller: ru, en, uz, de, es, tr"

@@ -1,0 +1,22 @@
+cladewelcome.default:
+  - "§aWillkommen, %player%!"
+  - "§eSchön dich zu sehen, %player%!"
+  - "§bSpieler %player% ist dem Server beigetreten!"
+  - "§dGrüße %player%!"
+
+cladewelcome.admin:
+  - "§cAdministrator %player% ist beigetreten!"
+  - "§4ADMIN %player% hat sich verbunden!"
+  - "§cAchtung! Admin %player% ist beigetreten!"
+  - "§4Administrator %player% ist online!"
+
+cladewelcome.op:
+  - "§dOP-Spieler %player% ist beigetreten!"
+  - "§5Operator %player% hat sich verbunden!"
+  - "§dSystemspieler %player% ist im Spiel!"
+
+reload-success: "§aPlugin erfolgreich neu geladen!"
+no-permission: "§cDu hast keine Berechtigung!"
+usage: "§eVerwendung: /cw reload | /cw lang <ru|en|uz>"
+lang-changed: "§aSprache geändert zu: %lang%"
+invalid-lang: "§cVerfügbare Sprachen: ru, en, uz, de, es, tr"
