@@ -1,89 +1,94 @@
 package org.vunlior;
 
-import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 public class LangManager {
 
     private YamlConfiguration lang;
-
-    private final String fallbackLang = "en";
-
     private final Random random = new Random();
 
+    private static final Set<String> ALLOWED_LANGS = Set.of(
+            "en", "ru", "uz", "de", "es", "tr", "fr", "pl", "pt", "it"
+    );
+
+    private static final String FALLBACK = "en";
+
     public void load(JavaPlugin plugin, String langName) {
+        if (!plugin.getDataFolder().exists()) {
+            plugin.getDataFolder().mkdirs();
+        }
 
-        // LANG FOLDER
         File langFolder = new File(plugin.getDataFolder(), "lang");
-
         if (!langFolder.exists()) {
             langFolder.mkdirs();
         }
 
-        // DEFAULT LANGS (save only if missing)
-        saveLang(plugin, "en");
-        saveLang(plugin, "ru");
-        saveLang(plugin, "uz");
-        saveLang(plugin, "de");
-        saveLang(plugin, "es");
-        saveLang(plugin, "tr");
+        langName = normalize(plugin, langName);
 
-        if (langName == null || langName.isEmpty()) {
-            langName = fallbackLang;
-        }
+        saveDefault(plugin, FALLBACK);
+        saveDefault(plugin, langName);
 
-        File file = new File(plugin.getDataFolder(), "lang/" + langName + ".yml");
+        File file = new File(langFolder, langName + ".yml");
 
-        // FALLBACK SYSTEM
         if (!file.exists()) {
-
-            plugin.getLogger().warning(
-                    "Lang not found: " + langName + ".yml → using EN fallback"
-            );
-
-            file = new File(plugin.getDataFolder(), "lang/" + fallbackLang + ".yml");
+            plugin.getLogger().warning("Lang file not found (" + langName + ".yml) → using fallback EN");
+            file = new File(langFolder, FALLBACK + ".yml");
         }
 
         lang = YamlConfiguration.loadConfiguration(file);
     }
 
-    // SAVE LANGUAGE FILE (safe)
-    private void saveLang(JavaPlugin plugin, String lang) {
+    private String normalize(JavaPlugin plugin, String langName) {
+        if (langName == null) return FALLBACK;
 
-        File file = new File(plugin.getDataFolder(), "lang/" + lang + ".yml");
+        langName = langName.toLowerCase();
 
+        if (!ALLOWED_LANGS.contains(langName)) {
+            plugin.getLogger().warning("Language '" + langName + "' is not supported. Backing up to EN.");
+            return FALLBACK;
+        }
+
+        return langName;
+    }
+
+    private void saveDefault(JavaPlugin plugin, String langName) {
+        File file = new File(plugin.getDataFolder(), "lang/" + langName + ".yml");
         if (!file.exists()) {
-            plugin.saveResource("lang/" + lang + ".yml", false);
+            try {
+                plugin.saveResource("lang/" + langName + ".yml", false);
+            } catch (IllegalArgumentException e) {
+                plugin.getLogger().warning("Could not find default lang resource for: " + langName);
+            }
         }
     }
 
-    // GET MESSAGE
     public String get(String key) {
-
         if (lang == null) return key;
 
-        // RANDOM LIST SUPPORT
         List<String> list = lang.getStringList(key);
 
-        if (list != null && !list.isEmpty()) {
-
-            String value = list.get(random.nextInt(list.size()));
-
-            return ChatColor.translateAlternateColorCodes('&', value);
+        if (!list.isEmpty()) {
+            return list.get(random.nextInt(list.size()));
         }
 
-        // SINGLE VALUE
-        String value = lang.getString(key);
+        return lang.getString(key, key);
+    }
 
-        if (value == null) {
-            return ChatColor.translateAlternateColorCodes('&', key);
+    public String getRaw(String key) {
+        if (lang == null) return key;
+
+        List<String> list = lang.getStringList(key);
+
+        if (!list.isEmpty()) {
+            return String.join("\n", list);
         }
 
-        return ChatColor.translateAlternateColorCodes('&', value);
+        return lang.getString(key, key);
     }
 }
