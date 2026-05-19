@@ -1,20 +1,67 @@
-# =========================================
+# =============================================================================
 # CladeWelcome Configuration
-# Version: 0.2.0.0.a
+# Version: 0.4.0.0.a
 # Author: Vunlior
-# =========================================
+# Download new versions: 1) https://modrinth.com/project/oAd9YfsP [Modrinth]
+# 2) https://hangar.papermc.io/Vunlior/CladeWelcome [Hangar]
+# 3) https://www.spigotmc.org/resources/cladewelcome.135054/ [SpigotMC]
+# en - English
+# ru - Russian
+# uz - Uzbek
+# de - German
+# es - Spanish
+# tr - Turkish
+# fr - French
+# pl - Polish
+# pt - Portuguese
+# it - Italian
+# =============================================================================
 
 language: en
 
+# =========================
+# MESSAGES SYSTEM
+# =========================
 messages:
-  default:
-    - "cladewelcome.default"
+  enabled: true
 
-  admin:
-    - "cladewelcome.admin"
-
-  op:
-    - "cladewelcome.op"
-
+# =========================
+# SOUNDS
+# =========================
 sounds:
+  enabled: true
+
+# =========================
+# SUBTITLE
+# =========================
+subtitle:
+  enabled: true
+  delay: 40
+
+# =========================
+# INFO PANEL
+# =========================
+info-panel:
+  enabled: true
+
+# =========================
+# ACTIONBAR
+# =========================
+actionbar:
+  enabled: true
+  duration: 600
+
+# =========================
+# BOSSBAR
+# =========================
+bossbar:
+  enabled: true
+  color: BLUE
+  style: SOLID
+  duration: 1200
+
+# =========================
+# FIRST-JOIN-FIREWORK
+# =========================
+first-join-firework:
   enabled: true
