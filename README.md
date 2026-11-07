@@ -4,7 +4,6 @@ Customisable join/quit messages, titles, action bar, boss bar, sounds, fireworks
 for **Paper, Spigot and Purpur 1.17.x – 1.21.x**.
 
 [Modrinth](https://modrinth.com/project/oAd9YfsP) ·
-[SpigotMC](https://www.spigotmc.org/resources/cladewelcome.135054/) ·
 [Changelog](CHANGELOG.md)
 
 ## Features
