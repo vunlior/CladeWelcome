@@ -1,0 +1,260 @@
+# =============================================================================
+# CladeWelcome Configuration
+# Version: 1.3.0
+# Author: Vunlior
+# Download new versions: 1) https://modrinth.com/project/oAd9YfsP [Modrinth]
+# 2) https://hangar.papermc.io/Vunlior/CladeWelcome [Hangar]
+# 3) https://www.spigotmc.org/resources/cladewelcome.135054/ [SpigotMC]
+# en - English
+# ru - Russian
+# uz - Uzbek
+# de - German
+# es - Spanish
+# tr - Turkish
+# fr - French
+# pl - Polish
+# pt - Portuguese
+# it - Italian
+# =============================================================================
+
+# Performance Mode: light or heavy
+# light  - Minimal features, best performance, low resource usage
+#          (animations and particles are switched off at runtime; your values below are NOT overwritten)
+# heavy  - All features enabled, more resource usage
+performance-mode: light
+
+# Debug Mode
+# Enable to see detailed logs for troubleshooting
+# WARNING: This will log a lot of information, only use for debugging
+debug:
+  enabled: false
+
+language: en
+
+# =========================
+# ANIMATIONS
+# =========================
+# Text animations for welcome messages
+animations:
+  enabled: true
+  # Animation types: gradient, rainbow, typing, wave, pulsing, scrolling
+  # Set to 'none' to disable animations
+  welcome-message:
+    type: rainbow
+    speed: 1.0
+    loop: true
+    duration: 60
+  subtitle:
+    type: rainbow
+    speed: 1.0
+    loop: true
+    duration: 60
+  actionbar:
+    type: rainbow
+    speed: 1.0
+    loop: true
+    duration: 60
+  bossbar:
+    type: rainbow
+    speed: 1.0
+    loop: true
+    duration: 60
+    # Colors for gradient/wave/pulsing animations (RGB format)
+    colors:
+      - "#FF0000"
+      - "#00FF00"
+      - "#0000FF"
+  # Per-player animations (random animation mode)
+  per-player:
+    enabled: false
+    random-mode: false
+
+# =========================
+# DATABASE STORAGE
+# =========================
+# Set enabled to true to use MySQL instead of local file storage
+database:
+  enabled: false
+  host: localhost
+  port: 3306
+  database: cladewelcome
+  # Use SSL for the connection (recommended when the database is on another machine).
+  use-ssl: false
+  # Use a dedicated MySQL user with a strong password, NOT root.
+  username: cladewelcome
+  password: change-me
+
+# =========================
+# MESSAGES SYSTEM
+# =========================
+messages:
+    enabled: true
+    # MiniMessage tags (<gradient:red:blue>, <bold>, <#ff8800>...) in any message.
+    # Needs a server that bundles MiniMessage (Paper 1.18.2+). &-codes and &#RRGGBB still work together with tags.
+    minimessage: true
+    # Clickable chat support
+    clickable:
+      enabled: true
+      # Click action: run_command, suggest_command, open_url, copy_to_clipboard
+      action: run_command
+      # Command to run when clicked (use %player% for player name)
+      command: "/msg %player% Welcome!"
+
+# =========================
+# PARTICLES
+# =========================
+particles:
+    enabled: false
+    # Particle type: FLAME, SMOKE_NORMAL, HEART, VILLAGER_HAPPY, etc.
+    type: HEART
+    # Number of particles per tick
+    count: 5
+    # Offset from player position
+    offset:
+      x: 0.5
+      y: 1.0
+      z: 0.5
+    # Particle speed
+    speed: 0.1
+    # Sync with text animation
+    sync-with-animation: false
+
+# =========================
+# SOUNDS
+# =========================
+sounds:
+    enabled: true
+    # Sound types: ENTITY_PLAYER_LEVELUP, ENTITY_EXPERIENCE_ORB_PICKUP, BLOCK_NOTE_BLOCK_PLING, etc.
+    # You can specify different sounds for different groups
+    default:
+      sound: ENTITY_PLAYER_LEVELUP
+      volume: 1.0
+      pitch: 1.0
+    # Group-specific sounds (optional)
+    groups:
+      vip:
+        sound: ENTITY_EXPERIENCE_ORB_PICKUP
+        volume: 1.0
+        pitch: 0.8
+      admin:
+        sound: BLOCK_NOTE_BLOCK_PLING
+        volume: 1.0
+        pitch: 1.2
+
+# =========================
+# SUBTITLE
+# =========================
+subtitle:
+    enabled: true
+    delay: 40
+
+# =========================
+# ACTIONBAR
+# =========================
+actionbar:
+    enabled: true
+    duration: 600
+
+# =========================
+# BOSSBAR
+# =========================
+bossbar:
+    enabled: true
+    color: BLUE
+    style: SOLID
+    duration: 1200
+    # Enable gradient colors for bossbar (requires animation type "gradient")
+    gradient-enabled: false
+    # Gradient colors (only used if gradient-enabled is true)
+    gradient-colors:
+      - "#FF0000"
+      - "#00FF00"
+      - "#0000FF"
+
+# =========================
+# FIRST-JOIN-FIREWORK
+# =========================
+first-join-firework:
+    enabled: true
+
+# =========================
+# INFO PANEL
+# =========================
+info-panel:
+    enabled: true
+    disable-for-op: false
+    disable-for-admin: false
+
+# =========================
+# UPDATE CHECK
+# =========================
+# source: modrinth or hangar
+# project: Modrinth project ID/slug, or the Hangar project slug (e.g. CladeWelcome)
+update-check:
+  enabled: true
+  source: modrinth
+  project: oAd9YfsP
+  download-url: "https://modrinth.com/plugin/cladewelcome"
+
+# =========================
+# FIRST JOIN COUNTER
+# =========================
+stats:
+    unique-join-counter: 0
+
+# =========================
+# GROUPS
+# =========================
+# Custom groups chosen by permission. Built-in groups still exist: admin (cladewelcome.admin), op, default.
+# If a player matches several groups the highest priority wins ("admin" always wins).
+# join-messages / quit-messages are optional: leave empty ([]) to use the language file.
+# Placeholders: %player% %online% %max% %joins% %rank%
+# Sound for a group: sounds.groups.<name>   Display name for %rank%: display
+groups:
+  vip:
+    permission: cladewelcome.vip
+    priority: 10
+    display: "VIP"
+    join-messages:
+      - "&6[VIP] &e%player% &7joined the server!"
+    quit-messages: []
+
+# =========================
+# RETURNING PLAYERS
+# =========================
+# Special message for players who come back after a while.
+# Placeholders: %player% %days% %joins% %online%
+returning:
+  enabled: false
+  min-days: 3
+  messages:
+    - "&e%player% &7is back after &e%days% days&7! Welcome back!"
+
+# =========================
+# ANTI-SPAM
+# =========================
+anti-spam:
+  # If a player rejoins within this many seconds after leaving, the public join message is skipped (0 = off)
+  join-cooldown-seconds: 0
+
+# =========================
+# FIRST JOIN REWARDS
+# =========================
+# Commands run from the console when a player joins for the first time. %player% = player name.
+# Example: - "give %player% bread 16"
+first-join-commands:
+  enabled: false
+  commands: []
+
+# =========================
+# DISCORD WEBHOOK
+# =========================
+# Posts join / first join / quit events to a Discord channel. Leave a message empty ("") to skip that event.
+# Placeholders: %player% %online% %max% %joins% %unique%
+discord:
+  enabled: false
+  url: ""
+  username: CladeWelcome
+  join-message: ":inbox_tray: **%player%** joined (%online%/%max%)"
+  first-join-message: ":tada: **%player%** joined for the first time! (#%unique%)"
+  quit-message: ":outbox_tray: **%player%** left (%online%/%max%)"

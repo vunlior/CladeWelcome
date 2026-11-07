@@ -1,0 +1,57 @@
+name: CladeWelcome
+version: 1.3.0
+main: org.vunlior.Main
+api-version: '1.17'
+author: Vunlior
+description: Customisable join/quit messages, titles, boss bars, sounds and more for Paper, Spigot and Purpur.
+website: https://modrinth.com/plugin/cladewelcome
+softdepend:
+  - PlaceholderAPI
+
+# Downloaded by the server on first start (Spigot/Paper 1.17+), so they are not bundled in the jar.
+libraries:
+  - com.zaxxer:HikariCP:5.1.0
+  - com.mysql:mysql-connector-j:8.0.33
+
+commands:
+  cw:
+    description: Main CladeWelcome command
+    usage: /cw help
+    aliases: [cladewelcome, cwl]
+
+permissions:
+  cladewelcome.admin:
+    description: Admin commands and admin join messages
+    default: op
+    children:
+      cladewelcome.reload: true
+      cladewelcome.lang: true
+      cladewelcome.status: true
+
+  cladewelcome.reload:
+    description: Allows reloading the plugin
+    default: op
+
+  cladewelcome.lang:
+    description: Allows changing plugin language
+    default: op
+
+  cladewelcome.status:
+    description: Allows viewing plugin status
+    default: op
+
+  cladewelcome.op:
+    description: Enables OP join messages
+    default: op
+
+  cladewelcome.default:
+    description: Default join messages group
+    default: true
+
+  cladewelcome.toggle:
+    description: Allows players to mute or unmute global player join chat messages for themselves.
+    default: true
+
+  cladewelcome.vip:
+    description: Uses the VIP group (custom messages and sound from config.yml)
+    default: false

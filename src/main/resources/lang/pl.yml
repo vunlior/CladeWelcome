@@ -1,0 +1,110 @@
+join:
+  default:
+    - "&#00FFCC&l👋 Witaj, %player%! Wbijaj do gry!"
+    - "&#50C878&l✨ Jesteśmy mega uradowani, widząc Cię, %player%!"
+    - "&#FFD700&l🚀 %player% wparował na serwer z pełną prędkością!"
+    - "&#FF007F&l💖 Siemanko, %player%! Twoja epicka przygoda właśnie się zaczyna!"
+
+  admin:
+    - "&#FF3333&l⚠️ Uwaga! Administrator %player% dołączył do serwera!"
+    - "&#440000&l👑 ADMIN %player% jest online. Wszystko pod kontrolą!"
+    - "&#FF2222&l⚡ Baczność! Admin %player% rozpoczął służbę!"
+    - "&#CC0000&l⚙️ Zarządzający %player% na stanowisku!"
+
+  op:
+    - "&#FF00FF&l⭐ Wyjątkowy gracz %player% dołączył do rozgrywki!"
+    - "&#7B68EE&l🔮 Operator %player% wchodzi na serwer, z drogi!"
+    - "&#BA55D3&l🛡️ Użytkownik systemowy %player% jest w grze!"
+
+reload-success: "&#50C878&l✔ Plugin został pomyślnie i błyskawicznie przeładowany!"
+no-permission: "&#FF3333&l❌ Brak uprawnień! Nie masz dostępu do tej komendy."
+usage: "&#FFD700&l💡 Użycie: &f/cw reload &e| &f/cw lang <język>"
+lang-changed: "&#50C878&l🌍 Język został pomyślnie zmieniony na: &#00FFCC&l%lang%!"
+invalid-lang: "&#FF3333&l⚠ Nieznany język! Dostępne: &fru, en, uz, de, es, tr, pl, pt, fr, it"
+
+subtitle.welcome: "&#00FFCC&l✨ Graj uczciwie i baw się świetnie na naszym serwerze!"
+
+actionbar:
+  - "&#50C878🔥 Witaj ponownie, %player%! Czas na podbój!"
+
+bossbar:
+  - "&#00FFCC🎮 Życzymy niezapomnianych chwil na naszym serwerze!"
+  - "&#7B68EE💎 Życzymy miłej i udanej rozgrywki!"
+
+firstjoin.message: "&#FF007F&l🎉 Nowa legenda! &#FFD700&l%player% &d&lwbił do nas po raz pierwszy! Przywitajcie gracza &#00FFCC&l#%unique%&d&l!"
+firstjoin.subtitle: "&#00FFCC🚀 Witaj w naszej zwariowanej i świetnej społeczności!"
+firstjoin.actionbar: "&#FF007F✨ Jesteś tu nowy? Wpisz &#FFD700&l/help &#FF007Fna start!"
+firstjoin.bossbar: "&#FFD700👑 Witaj na projekcie, nowy bohaterze!"
+
+toggle:
+  enabled: "&#50C878&l👀 [CladeWelcome] Czat włączony! Widzisz teraz komunikaty o wejściu graczy."
+  disabled: "&#FFD700&l🙈 [CladeWelcome] Tryb cichy! Komunikaty o wejściu zostały ukryte."
+  invalid-module: "&#FF3333&l❌ Nieprawidłowy moduł! Dostępne: sounds, subtitle, actionbar, bossbar, messages, firework, panel"
+  module-enabled: "&#50C878&l✔ [CladeWelcome] Moduł &#00FFCC%module% &#50C878włączony!"
+  module-disabled: "&#FFD700&l🙈 [CladeWelcome] Moduł &#FF007F%module% &#FFD700wyłączony!"
+
+animations:
+  enabled: "&#50C878&l✨ Animacje tekstu włączone!"
+  disabled: "&#FFD700&l🚫 Animacje tekstu wyłączone."
+  type-changed: "&#50C878&l✔ Typ animacji zmieniony na: &#00FFCC%type%"
+  invalid-type: "&#FF3333&l❌ Nieprawidłowy typ animacji! Dostępne: gradient, rainbow, typing, wave, pulsing, scrolling, none"
+
+clickable:
+  enabled: "&#50C878&l🖱️ Klikalny czat włączony!"
+  disabled: "&#FFD700&l🚫 Klikalny czat wyłączony."
+  hover-text: "&#00FFCC&l💡 Najedź na wiadomość aby zobaczyć więcej informacji!"
+
+particles:
+  enabled: "&#50C878&l✨ Cząsteczki włączone!"
+  disabled: "&#FFD700&l🚫 Cząsteczki wyłączone."
+  type-changed: "&#50C878&l✔ Typ cząsteczek zmieniony na: &#00FFCC%type%"
+  invalid-type: "&#FF3333&l❌ Nieprawidłowy typ cząsteczek!"
+
+command:
+  only-players: "&#FF3333&lTa komenda jest tylko dla graczy."
+  help:
+    - "&#FF8C00&l╔══════════════════════════════════════╗"
+    - "&#00FFCC&l  CladeWelcome &8| &fKomendy"
+    - "&#FF8C00&l╠══════════════════════════════════════╣"
+    - "  &#50C878/cw reload &8» &7Przeładuj config i języki"
+    - "  &#50C878/cw lang <code> &8» &7Zmień język bez restartu"
+    - "  &#50C878/cw toggle &8» &7Wycisz wiadomości o wejściu"
+    - "  &#50C878/cw help &8» &7Pokaż to menu"
+    - "&#FF8C00&l╚══════════════════════════════════════╝"
+
+update:
+  line1: "&#FF007F&l[CladeWelcome] &#FFFFFF🔥 Nowa wersja &#50C878%version% &#FFFFFFdostępna!"
+  line2: "&#AAAAAAZaktualizuj dla stabilności i nowych funkcji."
+  line3: "&#7B68EE&nhttps://modrinth.com/project/oAd9YfsP"
+
+quit:
+  fallback: "&c[CladeWelcome] &e%player% &7opuścił serwer."
+  default:
+      - "&c[CladeWelcome] &e%player% &7rozpłynął się we mgle... Będzie nam go brakować! 😭"
+      - "&c[CladeWelcome] &7Dokąd uciekasz, &e%player%&7? Wróć, wszystko wybaczone! 💔"
+      - "&c[CladeWelcome] &e%player% &7opuścił czat. Poziom klimatyczności spadł o 50%..."
+      - "&c[CladeWelcome] &e%player% &7odszedł do prawdziwego świata. Oby szybko stamtąd uciekł! 🌍"
+  admin:
+      - "&c[CladeWelcome] &4&lADMIN &c%player% &7zniknął w cieniu... Na serwerze zrobiło się podejrzanie cicho. 👥"
+      - "&c[CladeWelcome] &c%player% &7zamknął konsolę i poszedł odpocząć. Czas siać chaos! 😈"
+  op:
+    - "&c[CladeWelcome] &cOperator &e%player% &7opuścił posterunek. Zachować czujność! 🛡️"
+
+info:
+  panel:
+    - "&#FF8C00&l======================================="
+    - "  &#00FFCC&lWitaj na projekcie, %player%! 👋"
+    - "  &7Cieszymy się, że ponownie widzimy Cię w naszym świecie."
+    - ""
+    - "  &#50C878&l📊 TWOJE AKTUALNE STATYSTYKI:"
+    - "  &7» Twoja ranga: &#FFD700⚡ &f%rank%"
+    - "  &7» Ping serwera: &a%ping% ms"
+    - "  &7» Graczy online: &b%online%"
+    - "  &7» Czas serwera: &e%time%"
+    - ""
+    - "  &#FF007F&l📢 WAŻNE LINKI I KOMENDY:"
+    - "  &7• Regulamin serwera: &f/rules"
+    - "  &7• Kontakt z administracją: &f/report"
+    - "  &7• Nasz serwer Discord: &#7B68EE&ndiscord.gg/S3gkVgxk"
+    - "  &7• Wesprzyj projekt (Donate): &#FFD700&napp.lava.top/vunlior"
+    - "&#FF8C00&l======================================="

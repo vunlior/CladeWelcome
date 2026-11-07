@@ -1,0 +1,116 @@
+join:
+  default:
+    - "&#00FFCC&l👋 Hoş geldin, %player%! Aksiyona dahil ol!"
+    - "&#50C878&l✨ Seni gördüğümüze çok sevindik, %player%!"
+    - "&#FFD700&l🚀 %player% sunucuya jet hızıyla giriş yaptı!"
+    - "&#FF007F&l💖 Selam, %player%! Destansı maceran şimdi başlıyor!"
+  admin:
+    - "&#FF3333&l⚠️ Dikkat! Yönetici %player% sunucuya giriş yaptı!"
+    - "&#440000&l👑 ADMİN %player% aktif. Her şey kontrol altında!"
+    - "&#FF2222&l⚡ Herkes hazır ola geçsin! Admin %player% görev başında!"
+    - "&#CC0000&l⚙️ Yönetici %player% iş başında!"
+  op:
+    - "&#FF00FF&l⭐ Özel oyuncu %player% aramıza katıldı!"
+    - "&#7B68EE&l🔮 Operatör %player% bağlanıyor, yoldan çekilin!"
+    - "&#BA55D3&l🛡️ Sistem oyuncusu %player% oyunda!"
+
+reload-success: "&#50C878&l✔ Plugin başarıyla ve yıldırım hızıyla yeniden yüklendi!"
+no-permission: "&#FF3333&l❌ Yetki yok! Bu komutu kullanmak için izniniz bulunmuyor!"
+usage: "&#FFD700&l💡 Kullanım: &f/cw reload &e| &f/cw lang <dil>"
+lang-changed: "&#50C878&l🌍 Dil başarıyla değiştirildi: &#00FFCC&l%lang%!"
+invalid-lang: "&#FF3333&l⚠ Geçersiz dil! Geçerli diller: &fru, en, uz, de, es, tr, pl, pt, fr, it"
+
+database:
+  connected: "&#50C878&l✔ MySQL başarıyla bağlandı"
+  connection-failed: "&#FF3333&l❌ MySQL bağlantısı başarısız: %error%"
+  table-failed: "&#FF3333&l❌ Veritabanı tablosu oluşturulamadı: %error%"
+  load-failed: "&#FF3333&l❌ Ayarlar veritabanından yüklenemedi: %error%"
+  save-failed: "&#FF3333&l❌ Ayarlar veritabanına kaydedilemedi: %error%"
+  using-file: "&#FFD700&l⚠ MySQL yapılandırılmadı, yerel dosya depolaması kullanılıyor"
+
+subtitle.welcome: "&#00FFCC&l✨ Adilce oynayın ve sunucumuzun tadını çıkarın!"
+
+actionbar:
+  - "&#50C878🔥 Yeniden hoş geldin, %player%! Fethetme zamanı!"
+
+bossbar:
+  - "&#00FFCC🎮 Sunucumuzda unutulmaz bir vakit geçirin!"
+  - "&#7B68EE💎 Keyifli ve iyi oyunlar dileriz!"
+
+firstjoin.message: "&#FF007F&l🎉 Yeni bir efsane! &#FFD700&l%player% &d&lsunucumuza ilk kez ayak bastı! O artık &#00FFCC&l#%unique%&d&l. oyuncumuz!"
+firstjoin.subtitle: "&#00FFCC🚀 Harika topluluğumuza hoş geldin!"
+firstjoin.actionbar: "&#FF007F✨ Burada yeni misin? Başlamak için &#FFD700&l/help &#FF007Fyaz!"
+firstjoin.bossbar: "&#FFD700👑 Projeye hoş geldin, yeni kahraman!"
+
+toggle:
+  enabled: "&#50C878&l👀 [CladeWelcome] Sohbet aktif! Artık giriş mesajlarını göreceksistiniz."
+  disabled: "&#FFD700&l🙈 [CladeWelcome] Sessiz mod! Giriş mesajları gizlendi."
+  invalid-module: "&#FF3333&l❌ Geçersiz modül! Kullanılabilir: sounds, subtitle, actionbar, bossbar, messages, firework, panel"
+  module-enabled: "&#50C878&l✔ [CladeWelcome] Modül &#00FFCC%module% &#50C878aktif!"
+  module-disabled: "&#FFD700&l🙈 [CladeWelcome] Modül &#FF007F%module% &#FFD700devre dışı!"
+
+animations:
+  enabled: "&#50C878&l✨ Metin animasyonları aktif!"
+  disabled: "&#FFD700&l🚫 Metin animasyonları devre dışı."
+  type-changed: "&#50C878&l✔ Animasyon türü değiştirildi: &#00FFCC%type%"
+  invalid-type: "&#FF3333&l❌ Geçersiz animasyon türü! Kullanılabilir: gradient, rainbow, typing, wave, pulsing, scrolling, none"
+
+clickable:
+  enabled: "&#50C878&l🖱️ Tıklanabilir sohbet aktif!"
+  disabled: "&#FFD700&l🚫 Tıklanabilir sohbet devre dışı."
+  hover-text: "&#00FFCC&l💡 Mesajın üzerine gelerek daha fazla bilgi alın!"
+
+particles:
+  enabled: "&#50C878&l✨ Parçacıklar aktif!"
+  disabled: "&#FFD700&l🚫 Parçacıklar devre dışı."
+  type-changed: "&#50C878&l✔ Parçacık türü değiştirildi: &#00FFCC%type%"
+  invalid-type: "&#FF3333&l❌ Geçersiz parçacık türü!"
+
+command:
+  only-players: "&#FF3333&lBu komut yalnızca oyuncular içindir."
+  help:
+    - "&#FF8C00&l╔══════════════════════════════════════╗"
+    - "&#00FFCC&l  CladeWelcome &8| &fKomutlar"
+    - "&#FF8C00&l╠══════════════════════════════════════╣"
+    - "  &#50C878/cw reload &8» &7Yapılandırmayı yenile"
+    - "  &#50C878/cw lang <code> &8» &7Dili anında değiştir"
+    - "  &#50C878/cw toggle &8» &7Giriş mesajlarını kapat/aç"
+    - "  &#50C878/cw help &8» &7Bu menüyü göster"
+    - "&#FF8C00&l╚══════════════════════════════════════╝"
+
+update:
+  line1: "&#FF007F&l[CladeWelcome] &#FFFFFF🔥 Yeni sürüm &#50C878%version% &#FFFFFFyayında!"
+  line2: "&#AAAAAADaha fazla stabilite ve özellik için güncelleyin."
+  line3: "&#7B68EE&nhttps://modrinth.com/project/oAd9YfsP"
+
+quit:
+  fallback: "&c[CladeWelcome] &e%player% &7sunucudan ayrıldı."
+  default:
+    - "&c[CladeWelcome] &e%player% &7sislerin arasında kayboldu... Onu çok özleyeceğiz! 😭"
+    - "&c[CladeWelcome] &7Nereye gidiyorsun, &e%player%&7? Geri dön, her şeyi affettik! 💔"
+    - "&c[CladeWelcome] &e%player% &7sohbetten ayrıldı. Samimiyet ortamı %50 düştü..."
+    - "&c[CladeWelcome] &e%player% &7gerçek dünyaya döndü. Umarız oradan yakında kurtulur! 🌍"
+  admin:
+    - "&c[CladeWelcome] &4&lADMIN &c%player% &7gölgelerin arasında gizlendi... Sunucu şüpheli bir şekilde sessizleşti. 👥"
+    - "&c[CladeWelcome] &c%player% &7konsolu kapatıp dinlenmeye çekildi. Kaos yaratma vakti! 😈"
+  op:
+    - "&c[CladeWelcome] &cOperatör &e%player% &7görev yerinden ayrıldı. Tetikte olun! 🛡️"
+
+info:
+  panel:
+    - "&#FF8C00&l======================================="
+    - "  &#00FFCC&lProjeye hoş geldin, %player%! 👋"
+    - "  &7Seni tekrar dünyamızda gördüğümüze sevindik."
+    - ""
+    - "  &#50C878&l📊 GÜNCEL İSTATİSTİKLERİN:"
+    - "  &7» Rütben: &#FFD700⚡ &f%rank%"
+    - "  &7» Sunucu Gecikmesi: &a%ping% ms"
+    - "  &7» Toplam Çevrimiçi: &b%online% oyuncu"
+    - "  &7» Sunucu Saati: &e%time%"
+    - ""
+    - "  &#FF007F&l📢 ÖNEMLİ BAĞLANTILAR & KOMUTLAR:"
+    - "  &7• Sunucu Kuralları: &f/rules"
+    - "  &7• Destek Talebi: &f/report"
+    - "  &7• Discord Sunucumuz: &#7B68EE&ndiscord.gg/S3gkVgxk"
+    - "  &7• Projeyi Destekle (Bağış): &#FFD700&napp.lava.top/vunlior"
+    - "&#FF8C00&l======================================="

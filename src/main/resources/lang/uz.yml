@@ -1,0 +1,118 @@
+join:
+  default:
+    - "&#00FFCC&l👋 Xush kelibsiz, %player%! Qani, jangga!"
+    - "&#50C878&l✨ Seni ko‘rib juda ham xursandmiz, %player%!"
+    - "&#FFD700&l🚀 %player% shiddat bilan serverga qo‘shildi!"
+    - "&#FF007F&l💖 Salomlar, %player%! Sayohatni boshlaymiz!"
+
+  admin:
+    - "&#FF3333&l⚠️ Diqqat! Administrator %player% serverga kirib keldi!"
+    - "&#440000&l👑 ADMIN %player% hozirgina ulandi. Tartib nazoratda!"
+    - "&#FF2222&l⚡ Sergoh bo'ling! Admin %player% onlayn tarmoqda!"
+    - "&#CC0000&l⚙️ Boshqaruvchi %player% ish joyida!"
+
+  op:
+    - "&#FF00FF&l⭐ To'liq huquqli o‘yinchi %player% qo‘shildi!"
+    - "&#7B68EE&l🔮 Operator %player% ulanmoqda, yo'lni bering!"
+    - "&#BA55D3&l🛡️ Tizim o‘yinchisi %player% o‘yinga kirdi!"
+
+reload-success: "&#50C878&l✔ Plugin muvaffaqiyatli va chaqmoqdek tez qayta yuklandi!"
+no-permission: "&#FF3333&l❌ Afsuski, sizda bu buyruqni ishlatish uchun ruxsat yo‘q!"
+usage: "&#FFD700&l💡 Foydalanish: &f/cw reload &e| &f/cw lang <til>"
+lang-changed: "&#50C878&l🌍 Til muvaffaqiyatli o‘zgartirildi: &#00FFCC&l%lang%!"
+invalid-lang: "&#FF3333&l⚠ Noto'g'ri til! Mavjud tillar: &fru, en, uz, de, es, tr, pl, pt, fr, it"
+
+subtitle.welcome: "&#00FFCC✨ Adolatli o‘ynang va serverimizdan cheksiz zavq oling!"
+
+actionbar:
+  - "&#50C878🔥 Xush kelibsiz, %player%! Katta g'alabalar sari!"
+
+bossbar:
+  - "&#00FFCC🎮 Serverda ajoyib va unutilmas vaqt o'tkazing!"
+  - "&#7B68EE💎 Biz bilan maroqli o'yin tilaymiz!"
+
+firstjoin.message: "&#FF007F&l🎉 Yangi afsona! &#FFD700&l%player% &d&lserverimizga birinchi marta qadam qo'ydi! U safimizda &#00FFCC&l#%unique%&d&l-o'yinchi bo'ldi!"
+firstjoin.subtitle: "&#00FFCC🚀 Bizning do'stona hamjamiyatimizga xush kelibsiz!"
+firstjoin.actionbar: "&#FF007F✨ Siz bu yerda yangisiz! &#FFD700&l/help &#FF007Fbuyrug'ini yozing!"
+firstjoin.bossbar: "&#FFD700👑 Katta loyihaga xush kelibsiz, yangi qahramon!"
+
+toggle:
+  enabled: "&#50C878&l👀 [CladeWelcome] Chat faol! Endi kirish xabarlarini ko'rasiz."
+  disabled: "&#FFD700&l🙈 [CladeWelcome] Ovoziz rejim! Kirish xabarlari yashirildi."
+  invalid-module: "&#FF3333&l❌ Noto'g'ri modul! Mavjud: sounds, subtitle, actionbar, bossbar, messages, firework, panel"
+  module-enabled: "&#50C878&l✔ [CladeWelcome] Modul &#00FFCC%module% &#50C878yoqildi!"
+  module-disabled: "&#FFD700&l🙈 [CladeWelcome] Modul &#FF007F%module% &#FFD700o'chirildi!"
+
+animations:
+  enabled: "&#50C878&l✨ Matn animatsiyalari yoqildi!"
+  disabled: "&#FFD700&l🚫 Matn animatsiyalari o'chirildi."
+  type-changed: "&#50C878&l✔ Animatsiya turi o'zgartirildi: &#00FFCC%type%"
+  invalid-type: "&#FF3333&l❌ Noto'g'ri animatsiya turi! Mavjud: gradient, rainbow, typing, wave, pulsing, scrolling, none"
+
+clickable:
+  enabled: "&#50C878&l🖱️ Bosiladigan chat yoqildi!"
+  disabled: "&#FFD700&l🚫 Bosiladigan chat o'chirildi."
+  hover-text: "&#00FFCC&l💡 Xabarni ustiga olib boring va ko'proq ma'lumot oling!"
+
+particles:
+  enabled: "&#50C878&l✨ Zarrachalar yoqildi!"
+  disabled: "&#FFD700&l🚫 Zarrachalar o'chirildi."
+  type-changed: "&#50C878&l✔ Zarracha turi o'zgartirildi: &#00FFCC%type%"
+  invalid-type: "&#FF3333&l❌ Noto'g'ri zarracha turi!"
+
+command:
+  only-players: "&#FF3333&lBu buyruq faqat o'yinchilar uchun."
+  help-preview: "  &#50C878/cw preview <tur> [o'yinchi] &8» &7Effektni faqat o'zingizga ko'rsatish (admin/op)"
+  help:
+    - "&#FF8C00&l╔══════════════════════════════════════╗"
+    - "&#00FFCC&l  CladeWelcome &8| &fBuyruqlar"
+    - "&#FF8C00&l╠══════════════════════════════════════╣"
+    - "  &#50C878/cw reload &8» &7Sozlamalarni qayta yuklash"
+    - "  &#50C878/cw lang <code> &8» &7Tilni o'zgartirish"
+    - "  &#50C878/cw toggle &8» &7Kirish xabarlarini o'chirish"
+    - "  &#50C878/cw help &8» &7Yordam menyusi"
+    - "&#FF8C00&l╚══════════════════════════════════════╝"
+
+update:
+  line1: "&#FF007F&l[CladeWelcome] &#FFFFFF🔥 Yangi versiya &#50C878%version% &#FFFFFFmavjud!"
+  line2: "&#AAAAAAYangilanish barqarorlik va yangi funksiyalar uchun."
+  line3: "&#7B68EE&nhttps://modrinth.com/project/oAd9YfsP"
+
+quit:
+  fallback: "&c[CladeWelcome] &e%player% &7serverni tark etdi."
+  default:
+      - "&c[CladeWelcome] &e%player% &7tumanda g'oyib bo'ldi... Uni sog'inib qolamiz! 😭"
+      - "&c[CladeWelcome] &7Qayerga ketyapsan, &e%player%&7? Qayt, biz hamma narsani kechiramiz! 💔"
+      - "&c[CladeWelcome] &e%player% &7chatni tark etdi. Shinamlik darajasi 50% ga tushdi..."
+      - "&c[CladeWelcome] &e%player% &7haqiqiy dunyoga ketdi. Yaqinda qaytib keladi deb umid qilamiz! 🌍"
+  admin:
+      - "&c[CladeWelcome] &4&lADMIN &c%player% &7soyalar orasida yashirindi... Server shubhali darajada tinch bo'lib qoldi. 👥"
+      - "&c[CladeWelcome] &c%player% &7konsolni yopdi va dam olishga ketdi. Tartibsizlik boshlash vaqti keldi! 😈"
+  op:
+    - "&c[CladeWelcome] &cOperator &e%player% &7postni tark etdi. Hushyorlikni oshiramiz! 🛡️"
+
+info:
+  panel:
+    - "&#FF8C00&l======================================="
+    - "  &#00FFCC&lLoyiha rang-barangligiga xush kelibsiz, %player%! 👋"
+    - "  &7Sizni yana dunyomizda ko'rib turganimizdan xursandmiz."
+    - ""
+    - "  &#50C878&l📊 SIZNING JORIY STATISTIKANGIZ:"
+    - "  &7» Sizning darajangiz: &#FFD700⚡ &f%rank%"
+    - "  &7» Server pingi: &a%ping% ms"
+    - "  &7» Umumiy onlayn: &b%online% o'yinchi"
+    - "  &7» Server vaqti: &e%time%"
+    - ""
+    - "  &#FF007F&l📢 MUHIM HAVOLALAR VA BUYRUQLAR:"
+    - "  &7• Server qoidalari: &f/rules"
+    - "  &7• Qo'llab-quvvatlash: &f/report"
+    - "  &7• Bizning Discord jamoamiz: &#7B68EE&ndiscord.gg/S3gkVgxk"
+    - "  &7• Loyihani qo'llab-quvvatlash (Donate): &#FFD700&napp.lava.top/vunlior"
+    - "&#FF8C00&l======================================="
+
+preview:
+  usage: "&cFoydalanish: /cw preview <%types%> [o'yinchi]"
+  player-not-found: "&cO'yinchi topilmadi: %player%"
+  specify-player: "&cO'yinchini kiriting: /cw preview <tur> <o'yinchi>"
+  unknown-type: "&cNoma'lum tur. Mavjud: %types%"
+config-issues: "&e⚠ Sozlamalarda %count% ta muammo topildi, konsolga qarang."

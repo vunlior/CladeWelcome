@@ -1,0 +1,142 @@
+join:
+  default:
+    - "&#00FFCC&l👋 Welcome, %player%! Jump into the action!"
+    - "&#50C878&l✨ We are incredibly hyped to see you, %player%!"
+    - "&#FFD700&l🚀 %player% hyper-driven onto the server!"
+    - "&#FF007F&l💖 Hey there, %player%! Your epic journey starts now!"
+  admin:
+    - "&#FF3333&l⚠️ Heads up! Administrator %player% has joined the server!"
+    - "&#440000&l👑 ADMIN %player% is online. Everything is under control!"
+    - "&#FF2222&l⚡ At ease! Admin %player% is on duty!"
+    - "&#CC0000&l⚙️ Manager %player% is ready for action!"
+  op:
+    - "&#FF00FF&l⭐ Special player %player% has arrived!"
+    - "&#7B68EE&l🔮 Operator %player% is logging in, make way!"
+    - "&#BA55D3&l🛡️ System user %player% stepped into the game!"
+
+reload-success: "&#50C878&l✔ Plugin reloaded successfully and lightning fast!"
+no-permission: "&#FF3333&l❌ Safe zone! You do not have permission to use this command!"
+usage: "&#FFD700&l💡 Usage: &f/cw help &e| &f/cw status &e| &f/cw reload &e| &f/cw lang <lang> &e| &f/cw toggle"
+lang-changed: "&#50C878&l🌍 Language successfully changed to: &#00FFCC&l%lang%!"
+invalid-lang: "&#FF3333&l⚠ Invalid language! Supported: &fru, en, uz, de, es, tr, pl, pt, fr, it"
+
+database:
+  connected: "&#50C878&l✔ MySQL connected successfully"
+  connection-failed: "&#FF3333&l❌ Failed to connect to MySQL: %error%"
+  table-failed: "&#FF3333&l❌ Failed to create database table: %error%"
+  load-failed: "&#FF3333&l❌ Failed to load settings from database: %error%"
+  save-failed: "&#FF3333&l❌ Failed to save settings to database: %error%"
+  using-file: "&#FFD700&l⚠ MySQL not configured, using local file storage"
+
+subtitle.welcome: "&#00FFCC&l✨ Play fair and have an amazing time on our server!"
+
+actionbar:
+  - "&#50C878🔥 Welcome back, %player%! Time to conquer!"
+
+bossbar:
+  - "&#00FFCC🎮 Have an unforgettable time on our server!"
+  - "&#7B68EE💎 Wishing you a great game ahead!"
+
+firstjoin.message: "&#FF007F&l🎉 A new legend arises! &#FFD700&l%player% &d&ljoined us for the first time! Say hello to player &#00FFCC&l#%unique%&d&l!"
+firstjoin.subtitle: "&#00FFCC🚀 Welcome to our awesome community!"
+firstjoin.actionbar: "&#FF007F✨ New here? Type &#FFD700&l/help &#FF007Fto get started!"
+firstjoin.bossbar: "&#FFD700👑 Welcome to the project, new hero!"
+
+toggle:
+  enabled: "&#50C878&l👀 [CladeWelcome] Chat active! You will now see join messages."
+  disabled: "&#FFD700&l🙈 [CladeWelcome] Stealth mode! Join messages are now hidden."
+  invalid-module: "&#FF3333&l❌ Invalid module! Available: sounds, subtitle, actionbar, bossbar, messages, firework, panel"
+  module-enabled: "&#50C878&l✔ [CladeWelcome] Module &#00FFCC%module% &#50C878enabled!"
+  module-disabled: "&#FFD700&l🙈 [CladeWelcome] Module &#FF007F%module% &#FFD700disabled!"
+
+animations:
+  enabled: "&#50C878&l✨ Text animations enabled!"
+  disabled: "&#FFD700&l🚫 Text animations disabled."
+  type-changed: "&#50C878&l✔ Animation type changed to: &#00FFCC%type%"
+  invalid-type: "&#FF3333&l❌ Invalid animation type! Available: gradient, rainbow, typing, wave, pulsing, scrolling, none"
+
+clickable:
+  enabled: "&#50C878&l🖱️ Clickable chat enabled!"
+  disabled: "&#FFD700&l🚫 Clickable chat disabled."
+  hover-text: "&#00FFCC&l💡 Hover over the message to see more info!"
+
+particles:
+  enabled: "&#50C878&l✨ Particles enabled!"
+  disabled: "&#FFD700&l🚫 Particles disabled."
+  type-changed: "&#50C878&l✔ Particle type changed to: &#00FFCC%type%"
+  invalid-type: "&#FF3333&l❌ Invalid particle type!"
+
+command:
+  only-players: "&#FF3333&lThis command can only be used by players."
+  help-preview: "  &#50C878/cw preview <type> [player] &8» &7Preview an effect only for yourself (admin/op)"
+  help:
+    - "&#FF8C00&l╔══════════════════════════════════════╗"
+    - "&#00FFCC&l  CladeWelcome &8| &fCommand Reference"
+    - "&#FF8C00&l╠══════════════════════════════════════╣"
+    - "  &#50C878/cw reload &8» &7Reload config and languages"
+    - "  &#50C878/cw lang <code> &8» &7Switch language without restart"
+    - "  &#50C878/cw status &8» &7Plugin status (admin/op)"
+    - "  &#50C878/cw toggle &8» &7Mute or unmute join messages (all players)"
+    - "  &#50C878/cw help &8» &7Show this help menu (admin/op)"
+    - "&#FF8C00&l╚══════════════════════════════════════╝"
+  status:
+    - "&#FF8C00&l╔══════════ CladeWelcome Status ══════════╗"
+    - "  &#00FFCC&lVersion: &f%version% &8| &7Platform: &f%platform%"
+    - "  &#00FFCC&lMinecraft: &f%mc% &8| &7Language: &f%lang%"
+    - "  &#50C878&lModules:"
+    - "  &7» Messages: &f%messages% &8| &7Sounds: &f%sounds%"
+    - "  &7» Subtitle: &f%subtitle% &8| &7ActionBar: &f%actionbar%"
+    - "  &7» BossBar: &f%bossbar% &8| &7Firework: &f%firework%"
+    - "  &7» Info Panel: &f%panel%"
+    - "  &#7B68EE&lIntegrations:"
+    - "  &7» PlaceholderAPI: &f%papi% &8| &7Adventure: &f%adventure%"
+    - "  &7» MySQL: &f%mysql% &8| &7Animations: &f%animations%"
+    - "  &#FF007F&lFeatures:"
+    - "  &7» Clickable Chat: &f%clickable% &8| &7Particles: &f%particles%"
+    - "  &#FFD700&lServer:"
+    - "  &7» Online: &f%online% &8| &7Muted players: &f%muted%"
+    - "&#FF8C00&l╚══════════════════════════════════════════╝"
+
+update:
+  line1: "&#FF007F&l[CladeWelcome] &#FFFFFF🔥 New version &#50C878%version% &#FFFFFFis available!"
+  line2: "&#AAAAAAUpdate for stability improvements and new features."
+  line3: "&#7B68EE&nhttps://modrinth.com/project/oAd9YfsP"
+
+quit:
+  fallback: "&c[CladeWelcome] &e%player% &7left the server."
+  default:
+    - "&c[CladeWelcome] &e%player% &7vanished into thin air... We miss them already! 😭"
+    - "&c[CladeWelcome] &7Where are you going, &e%player%&7? Come back, all is forgiven! 💔"
+    - "&c[CladeWelcome] &e%player% &7left the chat. Atmospheric comfort dropped by 50%..."
+    - "&c[CladeWelcome] &e%player% &7left for the real world. Hope they escape from there soon! 🌍"
+  admin:
+    - "&c[CladeWelcome] &4&lADMIN &c%player% &7faded into the shadows... It's suspiciously quiet now. 👥"
+    - "&c[CladeWelcome] &c%player% &7closed the console and went to rest. Time to cause some chaos! 😈"
+  op:
+    - "&c[CladeWelcome] &cOperator &e%player% &7left their post. Stay alert! 🛡️"
+
+info:
+  panel:
+    - "&#FF8C00&l======================================="
+    - "  &#00FFCC&lWelcome to the project, %player%! 👋"
+    - "  &7We are glad to see you back in our world."
+    - ""
+    - "  &#50C878&l📊 YOUR CURRENT STATS:"
+    - "  &7» Your rank: &#FFD700⚡ &f%rank%"
+    - "  &7» Server Ping: &a%ping% ms"
+    - "  &7» Total Online: &b%online% players"
+    - "  &7» Server Time: &e%time%"
+    - ""
+    - "  &#FF007F&l📢 IMPORTANT LINKS & COMMANDS:"
+    - "  &7• Server Rules: &f/rules"
+    - "  &7• Contact Support: &f/report"
+    - "  &7• Our Discord Guild: &#7B68EE&ndiscord.gg/S3gkVgxk"
+    - "  &7• Support Us (Donate): &#FFD700&napp.lava.top/vunlior"
+    - "&#FF8C00&l======================================="
+
+preview:
+  usage: "&cUsage: /cw preview <%types%> [player]"
+  player-not-found: "&cPlayer not found: %player%"
+  specify-player: "&cSpecify a player: /cw preview <type> <player>"
+  unknown-type: "&cUnknown type. Available: %types%"
+config-issues: "&e⚠ Config has %count% issue(s), see the console for details."
