@@ -3,7 +3,6 @@
 Customisable join/quit messages, titles, action bar, boss bar, sounds, fireworks, info panel and Discord notifications
 for **Paper, Spigot and Purpur 1.17.x – 1.21.x**.
 
-[Hangar](https://hangar.papermc.io/Vunlior/CladeWelcome) ·
 [Modrinth](https://modrinth.com/project/oAd9YfsP) ·
 [SpigotMC](https://www.spigotmc.org/resources/cladewelcome.135054/) ·
 [Changelog](CHANGELOG.md)
